@@ -300,6 +300,50 @@ footer {
   background: #FF5050;
 }
 
+.nav {
+  background-color: #25274D;
+}
+
+.nav__menu {
+  margin-top: 20px;
+}
+
+.nav__menu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 45px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.nav__menu-item {
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.nav__menu-item + .nav__menu-item {
+  margin-left: 25px;
+}
+
+.nav__menu-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav__menu-link:hover {
+  color: #FF5050;
+}
+
 @media (max-width: 1041px) {
   .advantages__item {
     line-height: 15px;
@@ -360,6 +404,10 @@ footer {
 
   .search__btn {
     margin-left: 10px;
+  }
+
+  .nav__menu {
+    margin-top: -35px;
   }
 }
 
