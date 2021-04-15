@@ -62,7 +62,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	min-height: 100%;
 }
 
-main {
+.page {
 	flex: 1 0 auto;
 }
 
@@ -72,3 +72,63 @@ footer {
 
 @import "header";
 @import "nav";
+
+/* page */
+
+.page-container {
+	display: flex;
+	margin-top: 30px;
+}
+
+.page {
+	&__side {
+		flex: 0 0 255px;
+		border: 1px solid #DCDCDC;
+		border-radius: 5px;
+	}
+	&__menu {
+
+	}
+
+	&__slide {
+		flex: 1 1 auto;
+		border-radius: 5px;
+		margin: 0px 0px 0px 30px;
+		border: 1px solid #DCDCDC;
+	}
+}
+
+.menu-page {
+	&__list {
+		padding-left: 20px;
+	}
+
+	&__item {
+		width: 215px;
+		height: 65px;
+		padding-left: 45px;
+		border-bottom: 1px solid #DCDCDC;
+		background: url('../img/icons/aside-icon.svg') left no-repeat;
+		&:last-child {
+			border: none;
+		}
+		&:hover {
+			background-size: 16%;
+		}
+	}
+
+	&__link {
+		display: flex;
+		align-items: center;
+		justify-content: left;
+		font-weight: 500;
+		height: 65px;
+		line-height: 17px;
+		align-items: center;
+		letter-spacing: 0.05em;
+		color: #000000;
+		&:hover {
+			color: #FF5050;
+		}
+	}
+}
