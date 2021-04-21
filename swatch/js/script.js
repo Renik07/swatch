@@ -1,6 +1,22 @@
+const swiper = new Swiper('.swiper-container', {
+  direction: 'vertical',
+  loop: true,
+	autoplay: {
+		delay: 4000,
+	},
+  pagination: {
+    el: '.swiper-pagination',
+		type: 'bullets',
+		dynamicBullets: true,
+		dynamicMainBullets: 1,
+  },
+});
+
+
+
 function testWebP(callback) {
 
-	var webP = new Image();
+	let webP = new Image();
 	webP.onload = webP.onerror = function () {
 	callback(webP.height == 2);
 	};

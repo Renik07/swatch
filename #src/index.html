@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="css/style.min.css">
 	<title>Swatch® Россия - Home</title>
 </head>
@@ -38,14 +39,34 @@
 					</nav>
 				</aside>
 
-				<div class="page__slide">
-					
+				<div class="swiper page__slider">
+					<div class="page__container swiper-container">
+
+						<div class="page__wrapper swiper-wrapper">
+							<a href="#" class="page__slide-link swiper-slide">
+								<img src="img/slider/slide-1.jpg" alt="Женские часы">
+								<p class="page__text page__text--red">Коллекция женских часов 2021</p>
+							</a>
+							<a href="#" class="page__slide-link swiper-slide">
+								<img src="img/slider/slide-2.jpg" alt="Биокерамические часы">
+								<p class="page__text page__text--green">Биокерамические часы</p>
+							</a>
+							<a href="#" class="page__slide-link swiper-slide">
+								<img src="img/slider/slide-3.jpg" alt="Модел часов LA NIGHT BLUE">
+								<p class="page__text page__text--blue">Новая модель LA NIGHT BLUE</p>
+							</a>
+						</div>
+
+						<div class="page__pagination swiper-pagination"></div>
+
+					</div>
 				</div>
 			</div>
 		</main>
 		<!-- footer -->
 	</div>
 	
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 	<script src="js/script.min.js"></script>
 </body>
 </html>
