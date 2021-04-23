@@ -201,3 +201,60 @@ footer {
 		}
 	}
 }
+
+/* hot-products */
+
+.hot-products {
+
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 30px;
+		flex-wrap: wrap;
+	}
+
+	&__item {
+		flex: 0 1 31.532%;
+		height: 100%;
+		border-radius: 5px;
+		border: 1px solid #C4C4C4;
+		&:hover .hot-products__text {
+			border-bottom: 5px solid #FF5050;
+		}
+		@media (max-width: 995px) {
+			flex: 0 1 48%;
+			margin-bottom: 30px;
+		}
+		@media (max-width: 670px) {
+			flex: 0 1 100%;
+		}
+	}
+
+	&__link {
+
+	}
+
+	&__img {
+		width: 100%;
+		height: 150px;
+		border-radius: 5px 5px 0px 0px;
+		&--bg1 {
+			background: url('../img/hot/new-watch.jpg') center / cover no-repeat;
+		}
+		&--bg2 {
+			background: url('../img/hot/macau.jpeg') center / cover no-repeat;
+		}
+		&--bg3 {
+			background: url('../img/hot/store.jpg') center / cover no-repeat;
+		}
+}
+
+	&__text {
+    padding: 10px 15px 5px;
+		transition: all 0.5s ease;
+		border-radius: 5px;
+		border-bottom: 5px solid transparent;
+	}
+}
+.container {
+}

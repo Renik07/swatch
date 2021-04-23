@@ -459,6 +459,61 @@ footer {
   color: #FF5050;
 }
 
+/* hot-products */
+
+.hot-products__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  /* flex-flow: row wrap; */
+}
+
+.hot-products__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 31.532%;
+          flex: 0 1 31.532%;
+  height: 100%;
+  border-radius: 5px;
+  border: 1px solid #C4C4C4;
+}
+
+.hot-products__item:hover .hot-products__text {
+  border-bottom: 5px solid #FF5050;
+}
+
+.hot-products__img {
+  width: 100%;
+  height: 150px;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.hot-products__img--bg1 {
+  background: url("../img/hot/new-watch.jpg") center/cover no-repeat;
+}
+
+.hot-products__img--bg2 {
+  background: url("../img/hot/macau.jpeg") center/cover no-repeat;
+}
+
+.hot-products__img--bg3 {
+  background: url("../img/hot/store.jpg") center/cover no-repeat;
+}
+
+.hot-products__text {
+  padding: 10px 15px 5px;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  border-radius: 5px;
+  border-bottom: 5px solid transparent;
+}
+
 @media (max-width: 1160px) {
   .page-container {
     -webkit-box-orient: vertical;
@@ -503,6 +558,15 @@ footer {
   }
 }
 
+@media (max-width: 995px) {
+  .hot-products__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 48%;
+            flex: 0 1 48%;
+    margin-bottom: 30px;
+  }
+}
+
 @media (max-width: 960px) {
   .search__input {
     width: 260px;
@@ -525,6 +589,14 @@ footer {
 
   .page__container {
     width: 600px;
+  }
+}
+
+@media (max-width: 670px) {
+  .hot-products__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
   }
 }
 
@@ -609,3 +681,9 @@ footer {
     margin-left: 20px;
   }
 }
+
+.webp .hot-products__img--bg1{ background: url(../img/hot/new-watch.webp) center/cover no-repeat; }
+
+.webp .hot-products__img--bg2{ background: url(../img/hot/macau.webp) center/cover no-repeat; }
+
+.webp .hot-products__img--bg3{ background: url(../img/hot/store.webp) center/cover no-repeat; }
