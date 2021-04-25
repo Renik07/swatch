@@ -2,7 +2,7 @@
 	&__inner {
 		display: flex;
 		justify-content: space-between;
-		height: 175px;
+		min-height: 175px;
 		align-items: center;
 		@media (max-width: 892px) {
 			display: block;
