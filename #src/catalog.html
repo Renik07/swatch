@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="css/style.min.css" />
+	<title>Swatch® Россия - Catalog</title>
+</head>
+
+<body>
+	@@include('_header.html', {}) @@include('_nav.html', {})
+	<div class="wrapper">
+		<main class="page">
+			<section class="catalog">
+				<div class="container">
+					<aside class="catalog__inner">
+						<div class="filter">
+							<div class="filter__title">ФИЛЬТРЫ</div>
+							<div class="filter__body">
+								<div class="filter__color">
+									<div class="filter__color-title title-filter">ЦВЕТ</div>
+									<div class="filter__color-body">
+										<label class="filter__color-checkbox checkbox">
+											<input class="checkbox__input" type="checkbox">
+											<span class="checkbox__text">Синий</span>
+										</label>
+										<label class="filter__color-checkbox checkbox">
+											<input class="checkbox__input" type="checkbox">
+											<span class="checkbox__text">Красный</span>
+										</label>
+										<label class="filter__color-checkbox checkbox">
+											<input class="checkbox__input" type="checkbox">
+											<span class="checkbox__text">Белый</span>
+										</label>
+										<label class="filter__color-checkbox checkbox">
+											<input class="checkbox__input" type="checkbox">
+											<span class="checkbox__text">Черный</span>
+										</label>
+									</div>
+								</div>
+								
+								<div class="filter__material">
+									<div class="filter__material-title title-filter">МАТЕРИАЛ РЕМЕШКА</div>
+									<div class="filter__material-body">
+										<label class="filter__material-checkbox checkbox">
+											<input class="checkbox__input" type="checkbox">
+											<span class="checkbox__text">Пластик</span>
+										</label>
+										<label class="filter__color-checkbox checkbox">
+											<input class="checkbox__input" type="checkbox">
+											<span class="checkbox__text">Силикон</span>
+										</label>
+										<label class="filter__color-checkbox checkbox">
+											<input class="checkbox__input" type="checkbox">
+											<span class="checkbox__text">Нержавеющая сталь</span>
+										</label>
+									</div>
+								</div>
+								
+								<div class="filter__price price-filter">
+									<div class="price-filter__title title-filter">ЦЕНА:</div>
+									<div class="price-filter__range"></div>
+									<div class="price-filter__block">
+										<div class="price-filter__block-input">
+											<span>от</span>
+											<input class="price-filter__input price-filter__input-min" type="text">
+										</div>
+										<div class="price-filter__block-input">
+											<span>до</span>
+											<input class="price-filter__input price-filter__input-max" type="text">
+										</div>
+									</div>
+								</div>
+								
+								
+							</div>
+						</div>
+						<section class="catalog__content">
+
+						</section>
+					</aside>
+				</div>
+			</section>
+			
+			<!-- <section class="page-container container">
+				<aside class="page__side">
+					<nav class="page__menu menu-page">
+						<ul class="menu-page__list">
+							<li class="menu-page__item">
+								<a href="#" class="menu-page__link">Главная</a>
+							</li>
+							<li class="menu-page__item">
+								<a href="#" class="menu-page__link">Мужские часы</a>
+							</li>
+							<li class="menu-page__item">
+								<a href="#" class="menu-page__link">Женские часы</a>
+							</li>
+							<li class="menu-page__item">
+								<a href="#" class="menu-page__link">Детские часы</a>
+							</li>
+							<li class="menu-page__item">
+								<a href="#" class="menu-page__link">Кастомизация</a>
+							</li>
+							<li class="menu-page__item">
+								<a href="#" class="menu-page__link">Коллекции</a>
+							</li>
+						</ul>
+					</nav>
+				</aside>
+
+				<div class="swiper page__slider">
+
+				</div>
+			</section>
+
+			<section class="pop-products">
+				<div class="container">
+					<div class="pop-products__inner">
+						<h2 class="pop-products__title title">Популярные товары</h2>
+						<ul class="pop-products__list">
+							<li class="pop-products__item item-product">
+								<div class="item-product__img">
+									<img src="./img/pop/c-black.jpg" alt="Черные мужские часы C-Black. Керамические" />
+								</div>
+								<h3 class="item-product__title">C-Black</h3>
+								<p class="item-product__price">9 970,00 <span>руб.</span></p>
+								<div class="item-product__hover hover-item-product">
+									<a class="hover-item-product__img" href="#">
+										<img src="./img/icons/cart.svg" alt="">
+									</a>
+									<a class="hover-item-product__link" href="#">Открыть</a>
+								</div>
+							</li>
+							<li class="pop-products__item item-product">
+								<div class="item-product__img">
+									<img class="item-product__img" src="./img/pop/c-grey.jpg" alt="Серые мужские часы C-Grey. Керамические" />
+								</div>
+								<h3 class="item-product__title">C-Grey</h3>
+								<p class="item-product__price">9 970,00 <span>руб.</span></p>
+								<div class="item-product__hover hover-item-product">
+									<a class="hover-item-product__img" href="#">
+										<img src="./img/icons/cart.svg" alt="">
+									</a>
+									<a class="hover-item-product__link" href="#">Открыть</a>
+								</div>
+							</li>
+							<li class="pop-products__item item-product">
+								<div class="item-product__img">
+									<img class="item-product__img" src="./img/pop/c-white.jpg" alt="Белые мужские часы C-White. Керамические" />
+								</div>
+								<h3 class="item-product__title">C-White</h3>
+								<p class="item-product__price">9 970,00 <span>руб.</span></p>
+								<div class="item-product__hover hover-item-product">
+									<a class="hover-item-product__img" href="#">
+										<img src="./img/icons/cart.svg" alt="">
+									</a>
+									<a class="hover-item-product__link" href="#">Открыть</a>
+								</div>
+							</li>
+							<li class="pop-products__item item-product">
+								<div class="item-product__img">
+									<img class="item-product__img" src="./img/pop/speed-up.jpg" alt="Мужские часы Speed Up. Стальные" />
+								</div>
+								<h3 class="item-product__title">Speed Up</h3>
+								<p class="item-product__price">15 720,00 <span>руб.</span></p>
+								<div class="item-product__hover hover-item-product">
+									<a class="hover-item-product__img" href="#">
+										<img src="./img/icons/cart.svg" alt="">
+									</a>
+									<a class="hover-item-product__link" href="#">Открыть</a>
+								</div>
+							</li>
+							<li class="pop-products__item item-product">
+								<div class="item-product__img">
+									<img class="item-product__img" src="./img/pop/electric-blue.jpg" alt="Мужские часы Electric Blue. Стальные" />
+								</div>
+								<h3 class="item-product__title">Electric Blue</h3>
+								<p class="item-product__price">13 420,00 <span>руб.</span></p>
+								<div class="item-product__hover hover-item-product">
+									<a class="hover-item-product__img" href="#">
+										<img src="./img/icons/cart.svg" alt="">
+									</a>
+									<a class="hover-item-product__link" href="#">Открыть</a>
+								</div>
+							</li>
+							
+						</ul>
+					</div>
+				</div>
+			</section> -->
+
+
+		</main>
+		@@include('_footer.html', {})
+	</div>
+
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="js/script.min.js"></script>
+</body>
+
+</html>

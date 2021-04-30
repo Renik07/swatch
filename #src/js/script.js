@@ -1,3 +1,5 @@
+@@include('nouislider.min.js', {});
+
 const swiper = new Swiper('.swiper-container', {
   direction: 'vertical',
   loop: true,
@@ -30,4 +32,35 @@ function testWebP(callback) {
 	}else{
 	document.querySelector('body').classList.add('no-webp');
 	}
+});
+
+/*  */
+
+let priceSlider = document.querySelector('.price-filter__range');
+let input0 = document.querySelector('.price-filter__input-min');
+let input1 = document.querySelector('.price-filter__input-max');
+let inputs = [input0, input1];
+
+noUiSlider.create(priceSlider, {
+		start: [3750, 29500],
+		connect: true,
+		step: 50,
+		tooltips: [false, false],
+		range: {
+			'min': 3750,
+			'max': 29500
+		}
+});
+
+priceSlider.noUiSlider.on('update', function (values, handle) {
+	inputs[handle].value = values[handle];
+});
+
+// Listen to keydown events on the input field.
+inputs.forEach(function (input, handle) {
+
+	input.addEventListener('change', function () {
+		priceSlider.noUiSlider.setHandle(handle, this.value);
 	});
+
+});
