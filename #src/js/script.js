@@ -1,6 +1,6 @@
 @@include('nouislider.min.js', {});
 
-const swiper = new Swiper('.swiper-container', {
+const swiper = new Swiper('.page__container', {
   direction: 'vertical',
   loop: true,
 	autoplay: {
@@ -12,6 +12,23 @@ const swiper = new Swiper('.swiper-container', {
 		dynamicBullets: true,
 		dynamicMainBullets: 1,
   },
+});
+
+const swiperModel = new Swiper('.model-slider', {
+	effect: 'fade',
+	fadeEffect: {
+    crossFade: true
+  },
+	zoom: {
+		maxRatio: 1.5,
+		minRatio: 1
+	},
+	thumbs: {
+		swiper: {
+			el: '.model-slider-mini',
+			slidesPerView: 3
+		}
+	}
 });
 
 
