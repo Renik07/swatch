@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="css/style.min.css" />
+	<title> Swatch® Россия - SHOPPING CART </title>
+</head>
+
+<body>
+	@@include('_header.html', {}) @@include('_nav.html', {})
+	<div class="wrapper">
+		<main class="page">
+			<section class="checkout container">
+				<nav class="breadcrumbs">
+					<ul class="breadcrumbs__list">
+						<li class="breadcrumbs__item">
+							<a href="index.html" class="breadcrumbs__link">Главная</a>
+						</li>
+						<li class="breadcrumbs__item">
+							<span class="breadcrumbs__current-link">Корзина</span>
+						</li>
+					</ul>
+				</nav>
+				<form action="#" class="checkout__inner">
+
+					<div class="checkout-order">
+						<h2 class="checkout-order__title title">Ваш заказ</h2>
+						<div class="checkout-order__cart order-cart">
+							<div class="order-cart__img">
+								<img src="img/models/orange-cage/orange-cage-1.jpg" alt="">
+							</div>
+							<div class="order-cart__block">
+								<h3 class="order-cart__title">Мужские часы ORANGE EN CAGE</h3>
+								<div class="order-cart__quantity quantity">
+									<div class="quantity__btn">-</div>
+									<div class="quantity__input">
+										<input autocomplete="off" type="text" value="1">
+									</div>
+									<div class="quantity__btn">+</div>
+								</div>
+								<div class="order-cart__price">7 670 руб.</div>
+							</div>
+							<a href="" class="order-cart__delete">✖️</a>
+						</div>
+						<div class="checkout-order__total">
+							<div class="checkout-order__label">Итого: </div>
+							<div class="checkout-order__price">7 670 руб.</div>
+						</div>
+						<button type="submit" class="checkout-order__btn btn--red">Оформить заказ</button>
+					</div>
+
+					<div class="checkout__form">
+						<h2 class="checkout-order__title title">Оформление заказа</h2>
+						<div class="form-checkout">
+							<div class="form-checkout__line">
+								<div class="form-checkout__label">Фамилия</div>
+								<div class="form-checkout__input">
+									<input autocomplete="off" type="text" value="" required>
+								</div>
+							</div>
+							<div class="form-checkout__line">
+								<div class="form-checkout__label">Имя</div>
+								<div class="form-checkout__input">
+									<input autocomplete="off" type="text" value="" required>
+								</div>
+							</div>
+							<div class="form-checkout__line">
+								<div class="form-checkout__label">Отчество</div>
+								<div class="form-checkout__input">
+									<input autocomplete="off" type="text" value="" required>
+								</div>
+							</div>
+							<div class="form-checkout__line">
+								<div class="form-checkout__label">Моб. телефон</div>
+								<div class="form-checkout__input">
+									<input autocomplete="off" type="tel" value="" required>
+								</div>
+							</div>
+							<div class="form-checkout__line">
+								<div class="form-checkout__label">E-mail</div>
+								<div class="form-checkout__input">
+									<input autocomplete="off" type="email" value="" required>
+								</div>
+							</div>
+							<div class="form-checkout__line">
+								<div class="form-checkout__label">Индекс</div>
+								<div class="form-checkout__input">
+									<input autocomplete="off" type="text" value="" required>
+								</div>
+							</div>
+							<div class="form-checkout__line">
+								<div class="form-checkout__label">Город</div>
+								<div class="form-checkout__input">
+									<input autocomplete="off" type="text" value="" required>
+								</div>
+							</div>
+							<div class="form-checkout__line">
+								<div class="form-checkout__label">Адрес доставки</div>
+								<div class="form-checkout__input">
+									<input autocomplete="off" type="text" value="" required>
+								</div>
+							</div>
+							<div class="form-checkout__line">
+								<div class="form-checkout__label">Комментарий</div>
+									<textarea class="form-checkout__input form-checkout__input--area" name="" id="" ></textarea>
+							</div>
+						</div>
+					</div>
+				</form>
+
+			</section>
+
+		</main>
+		@@include('_footer.html', {})
+	</div>
+
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="js/script.min.js"></script>
+</body>
+
+</html>

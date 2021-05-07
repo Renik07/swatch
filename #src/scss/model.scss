@@ -64,23 +64,6 @@
 		color: #000000;
 		margin-bottom: 40px;
 	}
-
-	&__btn {
-		width: 250px;
-		display: block;
-		text-align: center;
-		background: #FF5050;
-		border-radius: 3px;
-		padding: 22px;
-		font-weight: 500;
-		font-size: 18px;
-		line-height: 150%;
-		color: #FFFFFF;
-		transition: all 0.2s ease-in;
-		&:hover {
-			background: #25274D;
-		}
-	}
 }
 
 .model-slider {
