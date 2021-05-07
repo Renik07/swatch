@@ -22,17 +22,17 @@
 		font-size: 14px;
 		line-height: 17px;
 	}
-	&__menu-item + &__menu-item {
-		margin-left: 25px;
-	}
 	&__menu-link {
 		text-decoration: none;
 		color: #fff;
+		padding: 5px 10px;
+		background-image: linear-gradient(#fff, #fff);
+		background-position: 50% 100%;
+		background-repeat: no-repeat;
+		background-size: 0% 2px;
+		transition: all .5s;
 		&:hover {
-			color: #FF5050;
-		}
-		&:active {
-			color: #FF5050;
+			background-size: 100% 2px;
 		}
 	}
 }

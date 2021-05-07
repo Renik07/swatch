@@ -2,6 +2,9 @@
 	background-color: #25274D;
 	&--margin {
 		margin-top: 100px;
+		@media (max-width: 450px) {
+			margin-top: 0px;
+		}
 	}
 	&__inner {
 		color: #fff;
