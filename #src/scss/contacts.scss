@@ -1,0 +1,33 @@
+.contacts {
+	p {
+		line-height: 150%;
+		margin-bottom: 20px;
+		strong {
+			text-transform: uppercase;
+		}
+	}
+	&__block {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		@media (max-width: 768px) {
+			flex-direction: column;
+		}
+	}
+	&__text {
+		flex: 0 1 50%;
+	}
+
+	&__title {
+		text-transform: uppercase;
+		margin-bottom: 40px;
+	}
+
+	&__map {
+		flex: 0 1 50%;
+		iframe {
+			width: 100%;
+			height: 450px;
+		}
+	}
+}

@@ -1,0 +1,13 @@
+.delivery {
+	p {
+		line-height: 150%;
+		margin-bottom: 20px;
+		strong {
+			text-transform: uppercase;
+		}
+	}
+	
+	&__title {
+		margin-bottom: 40px;
+	}
+}

@@ -489,6 +489,10 @@ footer {
   font-size: 10px;
 }
 
+.footer__copyright a {
+  color: #fff;
+}
+
 .model__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -826,6 +830,61 @@ footer {
   padding: 5px 10px;
 }
 
+.delivery p {
+  line-height: 150%;
+  margin-bottom: 20px;
+}
+
+.delivery p strong {
+  text-transform: uppercase;
+}
+
+.delivery__title {
+  margin-bottom: 40px;
+}
+
+.contacts p {
+  line-height: 150%;
+  margin-bottom: 20px;
+}
+
+.contacts p strong {
+  text-transform: uppercase;
+}
+
+.contacts__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contacts__text {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+
+.contacts__title {
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.contacts__map {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+
+.contacts__map iframe {
+  width: 100%;
+  height: 450px;
+}
+
 /* @import "catalog"; */
 
 /* page */
@@ -937,9 +996,9 @@ footer {
   align-items: center;
   letter-spacing: 0.05em;
   color: #000;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#DCDCDC), to(#DCDCDC));
-  background-image: -o-linear-gradient(#DCDCDC, #DCDCDC);
-  background-image: linear-gradient(#DCDCDC, #DCDCDC);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FF5050), to(#FF5050));
+  background-image: -o-linear-gradient(#FF5050, #FF5050);
+  background-image: linear-gradient(#FF5050, #FF5050);
   background-position: 0% 100%;
   background-repeat: no-repeat;
   background-size: 0% 5px;
@@ -1161,19 +1220,28 @@ footer {
 .banner {
   background-color: #25274d;
   min-height: 400px;
+  margin-top: 80px;
 }
 
 .banner__inner {
   max-width: 1110px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .banner__img {
   background: url("../img/banner-moma.jpg") left/cover no-repeat;
   display: block;
-  margin-top: 80px;
   min-height: 400px;
-  overflow: hidden;
+  -webkit-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.banner__img:hover {
+  -webkit-transform: scale(1.02);
+      -ms-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 /* new-products */
@@ -1567,6 +1635,15 @@ footer {
         -ms-flex: 0 0 130px;
             flex: 0 0 130px;
     font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts__block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 

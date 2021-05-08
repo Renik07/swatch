@@ -105,6 +105,8 @@ footer {
 @import "footer";
 @import "model";
 @import "checkout";
+@import "delivery";
+@import "contacts";
 /* @import "catalog"; */
 
 
@@ -221,7 +223,7 @@ footer {
 		align-items: center;
 		letter-spacing: 0.05em;
 		color: #000;
-		background-image: linear-gradient(#DCDCDC, #DCDCDC);
+		background-image: linear-gradient(#FF5050, #FF5050);
 		background-position: 0% 100%;
 		background-repeat: no-repeat;
 		background-size: 0% 5px;
@@ -423,16 +425,20 @@ footer {
 .banner {
 	background-color: #25274d;
 	min-height: 400px;
+	margin-top: 80px;
 	&__inner {
 		max-width: 1110px;
 		margin: 0 auto;
+		overflow: hidden;
 	}
 	&__img {
 		background: url('../img/banner-moma.jpg') left / cover no-repeat;
 		display: block;
-		margin-top: 80px;
 		min-height: 400px;
-		overflow: hidden;
+		transition: all 0.2s ease-in;
+		&:hover {
+			transform: scale(1.02);
+		}
 		@media (max-width: 975px) {
 			margin-top: 40px;
 			background: url('../img/banner-moma.jpg') -90px / cover no-repeat;
